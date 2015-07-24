@@ -17,6 +17,7 @@ namespace JSONSerializer
             Person p = new Person();
             p.name = "John";
             p.age = 32;
+            p.female = "Pattaki";
 
             //Сериализуйте объект Person в поток памяти с помощью сериализатора DataContractJsonSerializer.
             MemoryStream stream1 = new MemoryStream();
@@ -52,5 +53,7 @@ namespace JSONSerializer
         internal string name;
         [DataMember]
         internal int age;
+        [DataMember]
+        internal string female;
     }
 }
